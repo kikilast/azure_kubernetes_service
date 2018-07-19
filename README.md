@@ -15,6 +15,10 @@
   docker tag <image repository name> <login server>/<image name>:<version>
   ```
   
+  單純把image 推上dockerhub
+  ```cmd
+  docker push <username>/<repo name>:<Tag name>
+  ```
   最後把image推送上container registry
   ```cmd
   docker push <login server>/aci-helloworld:v1
