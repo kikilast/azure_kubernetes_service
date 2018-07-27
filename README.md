@@ -21,6 +21,6 @@
   ```
   最後把image推送上container registry
   ```cmd
-  docker push <login server>/aci-helloworld:v1
+  docker push <login server>/<repo name>:<Tag name>
   ```
   
