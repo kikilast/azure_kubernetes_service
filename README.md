@@ -1,25 +1,25 @@
-# azure_kubernetes_service
+ï»¿# azure_kubernetes_service
 
 ## Docker
-  µn¤J container registry
+  ç™»å…¥ container registry
   ```cmd
   az acr login --name mygistry
   ```
-  ©Î¬O
+  æˆ–æ˜¯
   ```cmd
   docker login myregistry.azurecr.io -u xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -p myPassword
   ```
   
-  ¦b±N¬M¹³±À°e¦Ü±zªºµn¿ı¤§«e¡A¥²¶·¨Ï¥Î ACR µn¤J¦øªA¾¹¦WºÙ¨Ó¼Ğ°O¬M¹³¡C ¨Ï¥Î docker tag ©R¥O¨Ó¼Ğ°O¬M¹³¡C ±Nµn¤J¦øªA¾¹¨ú¥N¬°±z¥ı«e°O¿ıªºµn¤J¦øªA¾¹¦WºÙ¡C
+  åœ¨å°‡æ˜ åƒæ¨é€è‡³æ‚¨çš„ç™»éŒ„ä¹‹å‰ï¼Œå¿…é ˆä½¿ç”¨ ACR ç™»å…¥ä¼ºæœå™¨åç¨±ä¾†æ¨™è¨˜æ˜ åƒã€‚ ä½¿ç”¨ docker tag å‘½ä»¤ä¾†æ¨™è¨˜æ˜ åƒã€‚ å°‡ç™»å…¥ä¼ºæœå™¨å–ä»£ç‚ºæ‚¨å…ˆå‰è¨˜éŒ„çš„ç™»å…¥ä¼ºæœå™¨åç¨±ã€‚
   ```cmd
   docker tag <image repository name> <login server>/<image name>:<version>
   ```
   
-  ³æ¯Â§âimage ±À¤Wdockerhub
+  å–®ç´”æŠŠimage æ¨ä¸Šdockerhub
   ```cmd
   docker push <username>/<repo name>:<Tag name>
   ```
-  ³Ì«á§âimage±À°e¤Wcontainer registry
+  æœ€å¾ŒæŠŠimageæ¨é€ä¸Šcontainer registry
   ```cmd
   docker push <login server>/<repo name>:<Tag name>
   ```
